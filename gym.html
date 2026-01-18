@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<title>Power Gym</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(90deg, #111, #333);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.3em;
+}
+
+nav {
+    background-color: #e63946;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background: url("https://images.unsplash.com/photo-1554284126-aa88f22d8b72") center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h2 {
+    background: rgba(0,0,0,0.6);
+    padding: 30px 25px;
+    border-radius: 15px;
+    font-size: 2em;
+    max-width: 800px;
+}
+
+section {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #111;
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 15px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 7px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 30px 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+form select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    
+}
+
+
+form button {
+    background-color: #e63946;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+form button:hover {
+    background-color: #c92d39;
+}
+
+.contact-box {
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+}
+.select{
+    background:  white;
+    padding: 35px;
+
+}
+
+.contact-box p {
+    font-size: 1.1em;
+    margin: 15px 0;
+}
+
+footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .hero h2 {
+        font-size: 1.8em;
+        padding: 20px 15px;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>POWER GYM</h1>
+<p>Stërvitu fort • Jeto shëndetshëm</p>
+</header>
+
+<nav>
+<a href="#klasat">Klasat</a>
+<a href="#regjistrohu">Regjistrohu</a>
+<a href="#kontakti">Kontakti</a>
+</nav>
+
+<div class="hero">
+<h2>Trupi yt është investimi yt më i mirë</h2>
+</div>
+
+<section id="klasat">
+<h2>Klasat Tona</h2>
+<div class="cards">
+<a href="pesha.html" class="card">
+<h3>Stërvitje me Pesha</h3>
+<p>Zhvillim force dhe muskujsh. Kliko për të parë video dhe më shumë informacion.</p>
+</a>
+<a href="kardio.html" class="card">
+<h3>Kardio & Fitness</h3>
+<p>Përmirësim i qëndrueshmërisë dhe shëndetit. Kliko për të parë video dhe më shumë informacion.</p>
+</a>
+<a href="yoga.html" class="card">
+<h3>Yoga & Stretching</h3>
+<p>Balancë trupore dhe mendore. Kliko për të parë video dhe më shumë informacion.</p>
+</a>
+</div>
+</section>
+
+<section id="regjistrohu">
+<h2>Regjistrohu</h2>
+<form action="Faleminderit.html" method="get">
+    <label for="name">Emri:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Numri i Telefonit:</label>
+
+    <input type="tel" id="phone" name="phone">
+
+    <label for="subscription">Paneli i Abonimit:</label>
+    
+<select id="subscription" name="subscription" required>
+    <option value="" disabled selected></option>
+    <option value="1muaj">1 Muaj</option>
+    <option value="3muaj">3 Muaj</option>
+    <option value="6muaj">6 Muaj</option>
+    <option value="1vit">1 Vit</option>
+</select><br>
+
+    <button type="submit">Regjistrohu</button>
+</form>
+</section>
+
+<section id="kontakti">
+<h2>Kontakti</h2>
+<div class="contact-box">
+<p><strong>Email:</strong> info@powergym.al</p>
+<p><strong>Telefon:</strong> +355 69 123 4567</p>
+<p><strong>Adresa:</strong> Rruga e Gjergj Fishtes, Tiranë, Shqipëri</p>
+</div>
+</section>
+
+<footer>
+©️ 2026 Power Gym | Projekt Shkollor
+</footer>
+
+</body>
+</html>
